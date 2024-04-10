@@ -1,0 +1,9 @@
+infile.txt
+main.c
+Makefile
+outfile2.txt
+outfile.txt
+parsing.c
+pipex.c
+pipex.h
+utils.c

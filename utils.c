@@ -25,7 +25,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		j++;
 	}
 	s3[i + j] = '\0';
-	printf("%s\n", s3);
 	return (s3);
 }
 

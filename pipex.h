@@ -13,17 +13,18 @@
 
 typedef struct s_data
 {
-	int f1;
-	int f2;
-	int end[2];
-	pid_t parent;
-	char *cmd1;
-	char *cmd2;
-	char *path_from_envp;
-	char **my_paths;
-	char **my_cmd_args;
-	char **my_cmd_args2;
-	char *my_line;
+	int		f1;
+	int		f2;
+	int		end[2];
+	pid_t	parent;
+	char	*cmd1;
+	char	*cmd2;
+	char	*path_from_envp;
+	char	**my_paths;
+	char	**my_cmd_args;
+	char	**my_cmd_args2;
+	char	*my_line;
+	int		flag;
 }	t_data;
 
 /////////////////////////////////////////
