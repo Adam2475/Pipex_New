@@ -19,9 +19,9 @@ char	*find_cmd(char *cmd, t_data *data)
 	// while (--i >= 0)
 	// 	free(data->my_paths[i]);
 	// free(data->my_paths);
-	//write(2, "command not found : ", 20);
-	//write(2, cmd, ft_strlen(cmd));
-	//write(2, "\n", 1);
+	write(2, "command not found : ", 20);
+	write(2, cmd, ft_strlen(cmd));
+	write(2, "\n", 1);
 	return (NULL);
 }
 

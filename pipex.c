@@ -3,7 +3,6 @@
 int	parent_process(t_data *data, char **envp)
 {
 	int status;
-	int i;
 	char *cmd;
 
 	waitpid(-1, &status, 0);
@@ -34,7 +33,7 @@ int	child_process(t_data *data, char **envp)
 	close(data->f1);
 	cmd = find_cmd(data->my_cmd_args[0], data);
 	//printf("%s\n", cmd);
-	exit(-1);
+	//exit(-1);
 	if (cmd == NULL)
 		exit(-1);
 	execve(cmd, data->my_cmd_args, envp);
