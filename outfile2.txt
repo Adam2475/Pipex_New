@@ -1,0 +1,9 @@
+a.out
+infile.txt
+main.c
+outfile2.txt
+outfile.txt
+parsing.c
+pipex.c
+pipex.h
+utils.c

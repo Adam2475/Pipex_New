@@ -11,7 +11,6 @@
 # include <sys/types.h>
 # include <sys/wait.h>
 
-
 typedef struct s_data
 {
 	int f1;
@@ -23,6 +22,7 @@ typedef struct s_data
 	char *path_from_envp;
 	char **my_paths;
 	char **my_cmd_args;
+	char **my_cmd_args2;
 	char *my_line;
 }	t_data;
 
@@ -40,6 +40,7 @@ void	*ft_memset(void *str, int c, size_t n);
 char	**ft_split(const char *s, char c);
 int		parent_process(t_data *data, char **envp);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*find_cmd(char *cmd, t_data *data);
 /////////////////////////////////////////
 
 #endif
