@@ -41,6 +41,8 @@ char	**ft_split(const char *s, char c);
 int		parent_process(t_data *data, char **envp);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*find_cmd(char *cmd, t_data *data);
+void	free_matrix(char **matrix);
+void	free_structure(t_data *data);
 /////////////////////////////////////////
 
 #endif

@@ -31,9 +31,11 @@ int	child_process(t_data *data, char **envp)
 		return (-1);
 	close(data->end[0]);
 	close(data->f1);
+	printf("%s\n", data->my_cmd_args2[0]);
+	write(1, data->my_cmd_args2[0], 10);
+	exit(1);
 	cmd = find_cmd(data->my_cmd_args[0], data);
 	//printf("%s\n", cmd);
-	//exit(-1);
 	if (cmd == NULL)
 		exit(-1);
 	execve(cmd, data->my_cmd_args, envp);
