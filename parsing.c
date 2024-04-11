@@ -19,15 +19,8 @@ char	*find_cmd(char *cmd, t_data *data)
 	write(2, "command not found : ", 20);
 	write(2, cmd, ft_strlen(cmd));
 	write(2, "\n", 1);
-	// free_matrix(data->my_paths);
-	// if (data->my_cmd_args != NULL)
-	// 	free_matrix(data->my_cmd_args);
-	// if (data->my_cmd_args2 != NULL)
-	// 	free_matrix(data->my_cmd_args2);
-	// free_structure(data);
 	return (NULL);
 }
-
 
 static char *retrieve_line(char **envp)
 {
@@ -37,7 +30,8 @@ static char *retrieve_line(char **envp)
 	while (envp[i] != NULL)
 	{
 		if (ft_strnstr(envp[i], "PATH=", 5))
-			return (ft_strdup(envp[i])); //	return (ft_strdup(&envp[i][5]));
+			return (ft_strdup(envp[i]));
+			//return (ft_strdup(&envp[i][5]));
 		i++;
 	}
 	return (NULL);

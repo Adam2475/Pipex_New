@@ -24,11 +24,11 @@ typedef struct s_data
 	char	**my_cmd_args;
 	char	**my_cmd_args2;
 	char	*my_line;
-	int		flag;
+	//int		flag;
 }	t_data;
 
 /////////////////////////////////////////
-void	pipex(t_data *data, char **av, char **envp);
+int		pipex(t_data *data, char **av, char **envp);
 int		child_process(t_data *data, char **envp);
 int		ft_strlen(const char *str);
 char	*ft_strdup(const char *s);

@@ -11,6 +11,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3 = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!s3)
 		return (0);
+	if (!s2)
+		return (ft_strdup(s1));
 	if (s1)
 	{
 		while (s1[i] != '\0')
@@ -33,7 +35,7 @@ int	ft_strlen(const char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str && str[i] != '\0')
 		i++;
 	return (i);
 }
