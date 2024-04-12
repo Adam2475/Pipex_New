@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adapassa <adapassa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/12 14:06:03 by adapassa          #+#    #+#             */
+/*   Updated: 2024/04/12 14:21:37 by adapassa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PIPEX_H
 # define PIPEX_H
 
@@ -24,7 +36,6 @@ typedef struct s_data
 	char	**my_cmd_args;
 	char	**my_cmd_args2;
 	char	*my_line;
-	//int		flag;
 }	t_data;
 
 /////////////////////////////////////////
@@ -44,6 +55,8 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*find_cmd(char *cmd, t_data *data);
 void	free_matrix(char **matrix);
 void	free_structure(t_data *data);
+int		ft_count(char const *s, char c);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 /////////////////////////////////////////
 
 #endif
